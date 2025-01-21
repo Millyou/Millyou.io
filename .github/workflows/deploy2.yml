@@ -1,0 +1,39 @@
+name: Deploy VitePress to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # V레포지토리의 main 브랜치에서 트리거
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. 소스 코드 체크아웃
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # 2. Node.js 설정
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      # 3. 의존성 설치
+      - name: Install dependencies
+        run: npm install
+
+      # 4. VitePress 빌드
+      - name: Build VitePress site
+        run: npm run docs:build
+
+
+      # 5. D레포지토리에 배포
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}  # PAT 사용
+          publish_dir: docs/.vitepress/dist
+          external_repository: Millyou/Millyou.github.io  # D레포지토리https://github.com/Millyou/Millyou.io
+          publish_branch: main  # D레포지토리의 main 브랜치
