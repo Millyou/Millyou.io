@@ -1,11 +1,11 @@
 ---
-title: 그누보드5 가이드
-description: 개발사가 안 만들어서 사용자가 직접 만드는 그누보드 안내서
+title:  신종덕 포트폴리오
+description: 개발자가 되기 위한 노력
 layout: home
 hero:
-  name: GNUBOARD 5 Guide
-  text: 그누보드5 가이드
-  tagline: 개발사가 안 만들어서 사용자가 직접 만드는 그누보드 안내서
+  name: 신종덕의 포트폴리오
+  text: 포트폴리오 구분
+  tagline: 개발자가 되기 위한 노력
   # actions:
   #   - theme: brand
   #     text: 📝 문서화 참여하기

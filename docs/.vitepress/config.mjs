@@ -34,12 +34,12 @@ if (process.env.NODE_ENV === 'production') {
 
 export default deepmerge(mergeConfig, defineConfig({
     lang: 'ko-KR',
-    titleTemplate: ':title - 그누보드5 가이드',
+    titleTemplate: ':title - 신종덕의 포트폴리오',
     description: '사용자가 직접 만드는 그누보드 안내서 ',
     base: '/',
     lastUpdated: true,
     themeConfig: {
-        siteTitle: '그누보드5 가이드',
+        siteTitle: '신종덕의 포트폴리오',
         outline: [2, 4],
         sidebar: {
             '/gnuboard/': [
