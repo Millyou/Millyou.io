@@ -138,67 +138,67 @@ export default deepmerge(mergeConfig, defineConfig({
             ],
             '/developers/': [
                 {
-                    text: '일반',
+                    text: '개요',
                     items: [
-                        { text: '라이프 사이클', link: '/developers/lifecycle' },
-                        { text: '설정', link: '/developers/config' },
-                        { text: 'Database', link: '/developers/database' },
-                        { text: '경로 및 URL Rewrite', link: '/developers/path_and_url' },
-                        { text: '쿠키 및 세션', link: '/developers/cookie_and_session' },
-                        { text: 'JS & CSS (Assets)', link: '/developers/assets' },
-                        { text: '캐시', link: '/developers/cache' },
-                        { text: '디버깅', link: '/developers/debug' },
-                        { text: '테스트', link: '/developers/test' },
-                        { text: '헬퍼', link: '/developers/helpers' },
+                        { text: '프로젝트 개요', link: '/developers/lifecycle' },
+                        { text: '이슈 사항 관리', link: '/developers/config' },
+                        { text: '진행 현황', link: '/developers/database' },
+                        { text: '향후 계획', link: '/developers/path_and_url' },
                     ]
                 },
                 {
-                    text: '보안',
+                    text: '아키텍처',
                     items: [
-                        { text: '오염된 전역변수', link: '/developers/polluted_variables' },
-                        { text: '파일 보안', link: '/developers/file_security' },
-                        { text: 'SQL Injection', link: '/developers/sql_injection' },
-                        { text: '토큰 및 암호화', link: '/developers/token_and_hash' },
+                        { text: '서버 그룹 구성', link: '/developers/polluted_variables' },
+                        { text: '데이터베이스 관리', link: '/developers/file_security' },
+                        { text: '생산 관리 모니터링', link: '/developers/sql_injection' },
+                        { text: '품질 비전 AI', link: '/developers/token_and_hash' },
+                        { text: 'PLC기반 생산 관리', link: '/developers/token_and_hash' },
                     ]
                 },
                 {
-                    text: '확장하기',
+                    text: '서버',
                     items: [
-                        { text: '플러그인', link: '/developers/make_plugin' },
-                        {
-                            text: 'Hook',
-                            link: '/developers/hook',
-                            items: [
-                                { text: 'Hook 목록', link: '/developers/hook-list' },
-                            ],
-                        },
-                        { text: '관리 메뉴', link: '/developers/admin_menu' },
-                        { text: '테마', link: '/make/theme/about' },
-                        { text: '스킨', link: '/make/skin' },
+                        { text: 'CRUX 서버 관리', link: '/developers/make_plugin' },
+                        { text: 'API 관리', link: '/developers/admin_menu' },
+                        { text: 'TCP 소켓 통신 관리', link: '/make/theme/about' },
+                        { text: '메세지 브로커 설정', link: '/make/skin' },
                     ]
                 },
                 {
-                    text: '헬퍼',
+                    text: '생산관리 모니터링',
                     items: [
-                        { text: '문자열' },
-                        { text: '경로 및 URL' },
-                        { text: '쿠기 및 세션' },
-                        { text: '데이터' },
-                        { text: '토큰 및 암호화' },
-                        { text: '' },
-                        { text: '' },
-                        { text: '' },
-                        { text: '' },
-                        { text: '' },
+                        { text: '시스템 개요', link: '/developers/make_plugin' },
+                        { text: '생산 공정 모니터링', link: '/developers/admin_menu' },
+                        { text: '품질 검사 모니터링', link: '/make/theme/about' },
+                        { text: '실시간 서버 상태', link: '/make/theme/about' },
+                    ]
+                },
+                {
+                    text: '품질비전 AI',
+                    items: [
+                        { text: '시스템 개요', link: '/developers/make_plugin' },
+                        { text: 'VisionAI', link: '/developers/admin_menu' },
+                        { text: '실시간 데이터 처리 및 통신', link: '/make/theme/about' },
+                    ]
+                },
+                {
+                    text: 'PLC 생산관리',
+                    items: [
+                        { text: '시스템 개요', link: '/developers/make_plugin' },
+                        { text: 'PLC 데이터 수집 프로세스', link: '/developers/admin_menu' },
+                        { text: '실시간 데이터 처리 및 통신', link: '/make/theme/about' },
                     ]
                 },
             ]
         },
         nav: [
-            { text: '그누보드', link: '/gnuboard/install' },
-            { text: '스킨', link: '/make/skin/about' },
-            { text: '테마', link: '/make/theme/about' },
-            { text: '개발자 가이드', link: '/developers/lifecycle' },
+            { text: '개요', link: '/gnuboard/install' },
+            { text: '아키텍처', link: '/make/skin/about' },
+            { text: '서버', link: '/make/theme/about' },
+            { text: '생산관리 모니터링', link: '/developers/lifecycle' },
+            { text: '품질비전AI', link: '/developers/lifecycle' },
+            { text: 'PLC생산관리', link: '/developers/lifecycle' },
         ],
         socialLinks: [
             { icon: 'github', link: 'https://github.com/g5guide/g5guide.github.io' },
